@@ -1,6 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap");
 /* Base */
 
+:root {
+    --color-principal: rgb(96, 138, 74);
+    --color-principal-dark-shadow: rgb(55, 82, 42);
+    --color-border-color: hsla(0, 0%, 100%, 0.077);
+    --color-hover: rgba(255, 255, 255, 0.102);
+    --copy-click: rgba(255, 255, 255, 0.2);
+}
+
 *,
 *::after,
 *::before {
@@ -64,27 +72,6 @@ body{
     margin: 20px 0;
 }
 
-/*Button*/
-
-.cube li a{ 
-
-    color: white;
-    text-decoration: none;
-    background:red;
-    border: 2px solid var(--border-color);
-    box-shadow: 0px 5px 0px var(--main-color-dark);
-    border-radius: 1px;
-    padding: 0.5rem 3rem;
-    transition: all 0.1s;
-    font-weight: bold;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-
-}
-
-/*Button*/
-
-
 /*Header*/
 
 nav{
@@ -113,8 +100,7 @@ nav ul{
 nav ul li{
     display: inline-block;
     line-height: 80px;
-    margin: 0 5px;
-    
+    margin: 0 5px; 
 }
 
 nav ul li a{
@@ -128,19 +114,21 @@ nav ul li a{
 .menu a{
     color: white;
     text-decoration: none;
-    background: rgb(94, 136, 73);
-    border: 2px solid rgb(94, 136, 73);
-    box-shadow: 0px 5px 0px rgb(58, 88, 44);
+    background: var(--color-principal);
+    border: 2px solid var(--color-border-color);
+    box-shadow: 0px 5px 0px var(--color-principal-dark-shadow);
     border-radius: 1px;
     padding: 0.5rem 3rem;
     transition: all 0.5s;
     font-weight: bold;
     font-size: 1.2rem;
+    transition: all 0.2s ease-in-out;
     text-transform: uppercase;
 }
 
-.menu a:hover{
-    box-shadow: none;
+.menu a:hover {
+    padding: 0.7rem 3.2rem; /* Increase padding */
+    box-shadow: 0px 0.5px 0pxvar(var(--color-principal-dark-shadow));
     transform: translateY(5px);
 }
 
