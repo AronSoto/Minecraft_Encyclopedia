@@ -14,6 +14,56 @@ html {
   scroll-behavior: smooth;
 }
 
+body{
+    background: #fff;
+    color: green;
+    overflow: auto;
+}
+
+.section{
+    width: 100%;
+    padding: 120px 0;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    padding: 0 30px;
+}
+
+.primary{
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.secondary{
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.tertiary{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.btn{
+    padding: 14px 20px;
+    background: rgb(234, 255, 0);
+    text-decoration: none;
+    border-radius: 4px;
+    color:#000000;
+    font-size: 22px;
+    display: inline-block;
+    margin: 20px 0;
+}
+
 /*Header*/
 
 nav{
@@ -43,18 +93,20 @@ nav ul li{
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
+    
 }
 
 nav ul li a{
     font-size: 18px;
     padding: 7px 13px;
     text-decoration: none;
-    color: green;
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
 }
 
 .menu a.active,
 .menu a:hover{
-    border-bottom: 2px solid rgb(220, 81, 17);
+    border: 2px solid rgb(255, 255, 255);
     transition: 0.3s;
 }
 
@@ -73,3 +125,143 @@ nav ul li a{
 }
 
 /*Header*/
+
+
+/*Logo Minecraft*/
+
+.spinner div {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 300px;
+    margin-top: -300px;
+    border: 0px solid #ccc;
+    background: rgba(255,255,255,0.8);
+    text-align: center;
+    line-height: 300px;
+    font-size: 300px;
+}
+
+.spinner .face1 { 
+    -webkit-transform: translateZ(150px);
+    -ms-transform: translateZ(150px);
+    transform: translateZ(150px);
+}
+.spinner .face2 { 
+    -webkit-transform: rotateY(90deg) translateZ(150px); 
+    -ms-transform: rotateY(90deg) translateZ(150px); 
+    transform: rotateY(90deg) translateZ(150px); 
+}
+.spinner .face3 { 
+    -webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(150px); 
+    -ms-transform: rotateY(90deg) rotateX(90deg) translateZ(150px); 
+    transform: rotateY(90deg) rotateX(90deg) translateZ(150px); 
+}
+.spinner .face4 { 
+    -webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(150px); 
+    -ms-transform: rotateY(180deg) rotateZ(90deg) translateZ(150px); 
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(150px); 
+}
+.spinner .face5 { 
+    -webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(150px); 
+    -ms-transform: rotateY(-90deg) rotateZ(90deg) translateZ(150px); 
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(150px); 
+}
+.spinner .face6 { 
+    -webkit-transform: rotateX(-90deg) translateZ(150px); 
+    -ms-transform: rotateX(-90deg) translateZ(150px); 
+    transform: rotateX(-90deg) translateZ(150px); 
+}
+
+.spinner {
+    -webkit-animation: spincube 2s ease-in-out infinite;
+    animation: spincube 8s linear infinite;
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 150px 150px 0;
+    -ms-transform-origin: 150px 150px 0;
+    transform-origin: 150px 150px 0;
+}
+
+@-webkit-keyframes spincube {
+    0%        {transform: rotateY(0deg);}
+  100%      {transform: rotateY(-360deg)}
+}
+@keyframes spincube {
+  0%        {transform: rotateY(0deg);}
+  100%      {transform: rotateY(-360deg)}
+}
+
+/*Logo Minecraft*/
+
+
+/*Body-High*/
+
+#hero-section{
+    background: #fff6f6;
+    margin-top: 80px;
+}
+
+.text,
+.visual{
+    width: 50%;
+}
+
+.text{
+    margin: 0 20px;
+}
+
+.visual img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#hero-section .text{
+    margin-left: 30px;
+}
+
+
+/*Body-High*/
+
+/*Body-Center*/
+
+#how-it-works{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.box{
+    border: 1px solid #b2b2b2;
+    padding: 25px 5px;
+    margin: 0 10px;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: 0.3 ease;
+    cursor: pointer;
+}
+
+.box ion-icon{
+    font-size: 35px;
+    color: orange;
+    margin: 15px 0;
+}
+
+.box.active,
+.box:hover {
+    color: #fff;
+    border-color: orange;
+    background: rgb(241, 112, 0);
+}
+
+.box.active ion-icon,
+.box:hover ion-icon{
+    color: #fff;
+}
+
+
+
+
+/*Body-Center*/
