@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap");
+/* Base */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*Header*/
+
+nav{
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: #000000;
+    box-shadow: 0 1px 1px -1px rgba(0, 0, 0, 0.22);
+    z-index: 22;
+}
+
+label.logo{
+    font-size: 35px;
+    line-height: 80px;
+    padding:0 30px;
+    font-weight: 700;
+    color: white;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    font-size: 18px;
+    padding: 7px 13px;
+    text-decoration: none;
+    color: green;
+}
+
+.menu a.active,
+.menu a:hover{
+    border-bottom: 2px solid rgb(220, 81, 17);
+    transition: 0.3s;
+}
+
+.chekbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+/*Header*/
