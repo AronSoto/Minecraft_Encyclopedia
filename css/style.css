@@ -23,7 +23,7 @@ html {
 }
 
 body{
-    background: #fff;
+    background: #030303;
     color: rgb(255, 255, 255);
     overflow: auto;
 }
@@ -383,5 +383,44 @@ nav ul li a{
     border-radius: 50%;
     margin-right: 20px;
 }
-
 /*Kinds*/
+
+/*Asked*/
+
+#faq .secondary{
+    text-align: center;
+}
+
+.faq{
+    width: 60%;
+    margin: 50px auto 20px auto;
+}
+
+summary{
+    padding: 1rem;
+    border: 1px solid #b2b2b2;
+    background-color: var(--color-principal);
+    margin-bottom: 1rem;
+    cursor: pointer;
+    outline: none;
+    border-radius: 0.3em;
+    font-weight: 600;
+}
+
+details[open] summary ~ *{
+    animation: open 0.5s ease-in-out;   
+}
+
+/*Asked*/
+
+@keyframes open {
+    from{
+        opacity: 1;
+        margin-top: -10px;
+    }
+
+    top{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
