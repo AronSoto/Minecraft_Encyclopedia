@@ -261,7 +261,64 @@ nav ul li a{
     color: #fff;
 }
 
-
-
-
 /*Body-Center*/
+
+/*Body-Middle*/
+
+#about .visual img,
+#app .visual img{
+    margin-right: auto;
+}
+
+/*Body-Middle*/
+
+/*Body-Countiner*/
+
+.category{
+    list-style: none;
+    text-align: center;
+    margin: 20px 0px 40px 0px;
+}
+
+.category li{
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.category li.active{
+    color: orange;
+}
+
+.restaurant-menu{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.menu-item{
+    width: 260px;
+    margin: 0 auto;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.menu-item img{
+    width: 100%;
+}
+
+.order{
+    justify-content: space-between;
+}
+
+.btn-menu{
+    padding: 6px 10px;
+    font-size: 16px;
+    text-align: center;
+    background: #fff;
+}
+
+
+
+/*Body-Countiner*/
