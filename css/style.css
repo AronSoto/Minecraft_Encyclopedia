@@ -24,7 +24,7 @@ html {
 
 body{
     background: #fff;
-    color: green;
+    color: rgb(255, 255, 255);
     overflow: auto;
 }
 
@@ -63,13 +63,22 @@ body{
 
 .btn{
     padding: 14px 20px;
-    background: rgb(234, 255, 0);
+    background: var(--color-principal);
     text-decoration: none;
-    border-radius: 4px;
-    color:#000000;
+    border-radius: 3px;
+    border: 2px solid var(--border-color);
+    box-shadow: 0px 5px 0px var(--main-color-dark);
+    color:rgb(255, 255, 255);
     font-size: 22px;
     display: inline-block;
     margin: 20px 0;
+    transition: all 0.1s;
+    font-size: 1.2rem;
+}
+
+.text a:hover{
+    box-shadow: 0px 0.5px 0px (var(--color-principal-dark-shadow));
+    transform: translateY(10px);
 }
 
 /*Header*/
@@ -128,7 +137,7 @@ nav ul li a{
 
 .menu a:hover {
     padding: 0.7rem 3.2rem; /* Increase padding */
-    box-shadow: 0px 0.5px 0pxvar(var(--color-principal-dark-shadow));
+    box-shadow: 0px 0.5px 0px (var(--color-principal-dark-shadow));
     transform: translateY(5px);
 }
 
@@ -221,7 +230,7 @@ nav ul li a{
 /*Body-High*/
 
 #hero-section{
-    background: #fff6f6;
+    background: #5a5757;
     margin-top: 80px;
 }
 
@@ -286,6 +295,7 @@ nav ul li a{
 /*Body-Center*/
 
 /*Body-Middle*/
+
 
 #about .visual img,
 #app .visual img{
@@ -354,7 +364,24 @@ nav ul li a{
     font-weight: 500;
 }
 
-
-
-
 /*Body-Countiner*/
+
+
+/*Kinds*/
+
+#testimonial .visual img{
+    margin-left: auto;
+}
+
+.user{
+    margin-top: 30px;
+    justify-content: start;
+}
+
+.user img{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+/*Kinds*/
