@@ -358,6 +358,32 @@ nav ul li a{
     margin-right: auto;
 }
 
+.social-links {
+    text-align: center;
+  }
+  .social-links ul {
+    list-style: none;
+  }
+  .social-links ul li {
+    display: inline-block;
+    padding: 10px;
+  }
+  
+  .social-links a {
+    color: rgb(255, 255, 255); /* Reemplaza $black por el valor correspondiente */
+    font-size: 20px;
+    text-decoration: none;
+    padding: 20px;
+    margin: 2rem;
+    border-bottom: solid 1.5px rgb(255, 255, 255); /* Reemplaza $black por el valor correspondiente */
+    transition: 0.3s;
+  }
+  .social-links a:hover {
+    background: black; /* Reemplaza $black por el valor correspondiente */
+    color: #fff;
+  }
+  
+
 /*Body-Middle*/
 
 /*Body-Countiner*/

@@ -109,14 +109,14 @@
 }
 
 .profile_detail span {
-    font-size: 1.5rem;
+    font-size: 1.65rem;
     font-weight: 600;
     color: var(--light);
     text-wrap: nowrap;
 }
 
 .profile_detail p {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     font-weight: 500;
     color: var(--light);
 }
