@@ -1,3 +1,4 @@
+
 .animals {
     --bg-color: radial-gradient(
         circle at 50% 0%,
@@ -88,6 +89,10 @@
     object-position: center;
 }
 
+#fondo_animal:before{
+	background-color: rgba(0,0,0,0.5);
+}
+
 .animal_content .profile_image {
     opacity: calc(1 - var(--active));
 
@@ -111,7 +116,7 @@
 }
 
 .profile_detail p {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     font-weight: 500;
     color: var(--light);
 }
