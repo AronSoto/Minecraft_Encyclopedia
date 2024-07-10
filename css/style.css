@@ -370,24 +370,24 @@ nav ul li a{
     margin-right: auto;
 }
 
-/*Body-Middle*/
+/*Body-Middles*/
 
 
 /*Buttons Profile*/
 
 .feed-container {
-    position: absolute;
     text-align: center;
+    justify-items: right;
     
 }
   
   .post-container {
     display: inline-block;
-    margin: 0px 20px 0px;
+    margin: 0px 30px 0px;
     cursor: pointer;
     font-weight: 400;
     letter-spacing: 2px;
-    height: 45px;
+    height: 55px;
     width: 200px;
     -webkit-perspective: 1000;
     -ms-perspective: 1000;
@@ -420,7 +420,7 @@ nav ul li a{
       
       img.fa {
         color: white;
-        width: 20%;
+        width: 18%;
         margin: auto;
         text-shadow: .5px 1px 2px #3c3c3c;
         
@@ -449,9 +449,16 @@ nav ul li a{
         background-image:  linear-gradient(90deg, #000000, #252626);
       }
 
+      #front-lin {
+        transform: translateZ(22.5px);
+        background-size: 100%;
+        background-image: url('../img/linkedin_back.jpg');
+      }
+
       #front-git {
         transform: translateZ(22.5px);
-        background-image:  linear-gradient(90deg, #ffffff, #757575);
+        background-size: 100%;
+        background-image: url('../img/github_back.jpg');
       }
 
       #linkedin{
@@ -465,21 +472,13 @@ nav ul li a{
         -webkit-transform: rotateX(90deg) rotateZ(180deg) rotateY(180deg) translateZ(22.5px);
           -ms-transform: rotateX(90deg) rotateZ(180deg) rotateY(180deg) translateZ(22.5px); 
         transform: rotateX(90deg) rotateZ(180deg) rotateY(180deg) translateZ(22.5px);
-        background-image:  linear-gradient(90deg, #000, #6CC644);
-      }
-
-      #instagram{
-        -webkit-transform: rotateX(90deg) rotateZ(180deg) rotateY(180deg) translateZ(22.5px);
-          -ms-transform: rotateX(90deg) rotateZ(180deg) rotateY(180deg) translateZ(22.5px); 
-        transform: rotateX(90deg) rotateZ(180deg) rotateY(180deg) translateZ(22.5px);
-        background-image:  linear-gradient(90deg, #000, #F77737);
+        background-image:  linear-gradient(90deg, #000, #ffffff);
       }
       
       &:hover .card-flip3d-vertical1 {
           transform: rotateX(90deg);
       }
 }
-
 
 /*Buttons-Profile*/
 
