@@ -35,6 +35,7 @@ body{
 .section{
     width: 100%;
     padding: 120px 0;
+    
 }
 
 .flex{
@@ -315,20 +316,31 @@ nav ul li a{
 /*Body-Center*/
 
 #how-it-works{
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
     text-align: center;
 }
 
-.box{
-    border: 1px solid #FFEB3B;
+.box {
     padding: 25px 5px;
     margin: 0 10px;
     border-radius: 8px;
     font-size: 18px;
-    transition: 0.3 ease;
+    transition: all 0.5s ease; /* Ajuste de la transición */
     cursor: pointer;
+    background: black;
+    border: 0px solid rgb(0, 0, 0);
+    box-shadow: 5px 15px 0px #C28340;
 }
+
+.box:hover {
+    transform: scale(1.1); /* Agranda el elemento ligeramente */
+    margin: 0 25px; /* Aumenta el margen para alejar los elementos adyacentes */
+    box-shadow: 0px 0px 0px #854F2B; /* Ajusta la sombra */
+}
+
+
+
 
 .box img{
     width: 35px;
@@ -339,7 +351,7 @@ nav ul li a{
 .box:hover {
     color: #fff;
     border-color: #ffffff;
-    background: #4CAF50;
+    background: #61371F;
 }
 
 .box.active ion-icon,
