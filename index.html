@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> 
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/style_animals.css"/>
     <link rel="stylesheet" href="css/style_profile.css"/>
@@ -12,7 +13,7 @@
 </head>
 
 <body>
-
+    <header id="reftop"></header>
     <!--Header-->
 
     <div class="menu">
@@ -27,7 +28,7 @@
             </label>
 
             <ul>
-                <li><a href="#hero-section">Home</a></li>
+                <li><a href="#reftop">Home</a></li>
                 <li><a href="#about" >About</a></li>
             </ul>
         </nav>
@@ -48,7 +49,7 @@
                 This dynamic and easy-to-use website offers engaging animations and an interactive experience.
             </p>
 
-            <a href="#menu" class="btn">Explore Encyclopedia</a>
+            <a href="#refmiddle" class="btn">Explore Encyclopedia</a>
         </div>
         <center class="visual">
             <div id="stage">
@@ -72,7 +73,7 @@
         <h1></h1>
     </div>
 
-    <section class="aboutof">
+    <section class="aboutof" id="refmiddle">
         <div class="section" id="how-it-works">
             <h2 class="secondary">
                 Minecyclopedia
@@ -158,42 +159,42 @@
     <section class="animals">
         <div class="category_animals">
             <div class="animal_content" id="fondo_animal">
-                <img src="img/Secondary_fox.jpg" class="profession_image" alt="Secondary" />
-                <img src="img/Principal_fox.jpg" class="profile_image" alt="Principal" />
+                <img src="img/Secondary_Axolotl.jpg" class="profession_image" alt="Secondary" />
+                <img src="img/Principal_Axolotl.jpg" class="profile_image" alt="Principal" />
                 <div class="profile_detail">
-                    <span>Fox</span>
-                    <p>Wild Animal</p>
+                    <span>Axolotl</span>
+                    <p>Aquatic Animal</p>
                 </div>
                 <div class="wrapper">            
                     <div class="profile_quote">
-                        <p>A Minecraft fox is a clever and resourceful creature, thriving in taiga biomes.</p>
+                        <p>A Minecraft axolotl is a curious and resilient aquatic creature, thriving in underwater caves and lakes.</p>
                     </div>
                 </div>
             </div>
             <div class="animal_content" id="fondo_animal">
-                <img src="img/Secondary_Sheep.jpg" class="profession_image" alt="Secondary"/>
-                <img src="img/Principal_sheep.jpg" class="profile_image" alt="Principal" />
+                <img src="img/Secondary_Panda.jpg" class="profession_image" alt="Secondary"/>
+                <img src="img/Principal_Panda.jpg" class="profile_image" alt="Principal" />
                 <div class="profile_detail">
-                    <span>Sheep</span>
-                    <p>Farm Animal</p>
+                    <span>Panda</span>
+                    <p>Wild Animal</p>
                 </div>
                 <div class="wrapper">                
                     <div class="profile_quote">
-                        <p>A Minecraft sheep is a gentle and versatile creature, found grazing in various biomes.</p>
+                        <p>A Minecraft panda is a gentle and playful creature, commonly found in bamboo jungles.</p>
                     </div>
                 </div>
             </div>
             <div class="animal_content" id="fondo_animal">
-                <img src="img/Secondary_Bee.jpg" class="profession_image" alt="Secondary" />
-                <img src="img/Principal_Bee.jpg" class="profile_image" alt="Principal" />
+                <img src="img/Secondary_Sniffer.jpg" class="profession_image" alt="Secondary" />
+                <img src="img/Principal_Sniffer.jpg" class="profile_image" alt="Principal" />
                 <div class="profile_detail">
-                    <span>Bee</span>
-                    <p>Wild Insect</p>
+                    <span>Sniffer</span>
+                    <p>Ancient Animal</p>
                 </div>
                 <div class="wrapper">                
                     <div class="profile_quote">
-                        <p>A Minecraft bee is a diligent and buzzing creature, commonly found near flower fields and beehives, 
-                            playing a vital role in pollination.</p>
+                        <p>A Minecraft Sniffer is an ancient and wise creature, known for its ability to dig up rare seeds 
+                            from the ground.</p>
                     </div>
                 </div>
             </div>
@@ -203,15 +204,15 @@
     <section class="animals">
         <div class="category_animals">
             <div class="animal_content" id="fondo_animal">
-                <img src="img/Secondary_fox.jpg" class="profession_image" alt="Secondary" />
-                <img src="img/Principal_fox.jpg" class="profile_image" alt="Principal" />
+                <img src="img/Secondary_frog.jpg" class="profession_image" alt="Secondary" />
+                <img src="img/Principal_frog.jpg" class="profile_image" alt="Principal" />
                 <div class="profile_detail">
-                    <span>Fox</span>
-                    <p>Wild Animal</p>
+                    <span>Frog</span>
+                    <p>Neutral Animal</p>
                 </div>
                 <div class="wrapper">            
                     <div class="profile_quote">
-                        <p>A Minecraft fox is a clever and resourceful creature, thriving in taiga biomes.</p>
+                        <p>A Minecraft frog is a versatile and lively creature, thriving in swamp biomes and near water sources.</p>
                     </div>
                 </div>
             </div>
@@ -283,15 +284,51 @@
                     </p>
                     <br><br>
                     <!--<a href="#menu" class="btn">Explore Menu</a> -->
-                    <div class="social-links">
-                        <ul>
-                           <li><a href="https://www.linkedin.com/in/aron-soto/">
-                            <strong><font color="#0E76A8">Linkedin</font></strong></a></li>
-                           <li><a href="https://github.com/AronSoto">Github</a></li>
-                           <li><a href="https://www.instagram.com/aronchino/">
-                            <strong><font color="FA7E1E">Instagram</font></strong></a></li>
-                        </ul>
-                     </div>
+
+                    <div class="page-feed" id="flip-3d">
+                        <div class="feed-container">
+                                    
+                            <div class="post-container post-flip3d-vertical1">
+                                <a href="https://www.linkedin.com/in/aron-soto/">
+                                    <div class="card card-flip3d-vertical1">
+                                        <div class="post front">
+                                            <img class="fa" src="img/profile_Linkedin.png"/>
+                                        </div>
+                                        <div class="post post-3d back" id="linkedin">
+                                            Linkedin
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                                
+                            <div class="post-container post-flip3d-vertical1">
+                                <a href="https://github.com/AronSoto">
+                                    <div class="card card-flip3d-vertical1">
+                                        <div class="post front" id="front-git">
+                                            <img class="fa" src="img/profile_Github.png"/>
+                                        </div>
+                                        <div class="post post-3d back" id="github">
+                                            Github
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="post-container post-flip3d-vertical1">
+                                <a href="https://www.instagram.com/aronchino/">
+                                    <div class="card card-flip3d-vertical1">
+                                        <div class="post front">
+                                            <img class="fa" src="img/profile_Instagram.png"/>
+                                        </div>
+                                        <div class="post post-3d back" id="instagram">
+                                            Instagram
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -551,9 +588,8 @@
 
       <br>
       <br>
-
       
-    
+      
 
       <br>
       <br>
