@@ -81,17 +81,26 @@
 }
 
 .profile-divider {
-  background-color: #218583;
-  height: 2.6px;
-  width: 192px;
+  display: flex;
+  border: 3px solid rgb(0, 0, 0);
+  height: 10px;
+  width: 200px;
+}
+
+.section-colors {
+  width: 40px;
+  height: 100%;
 }
 
 .profile-name {
-  color: #f3f4f5;
   font-size: 43.2px;
   font-weight: 600;
   margin-top: 19.2px;
   text-align: center;
+}
+
+.profile-name img{
+  width: 75%;
 }
 
 .profile-title {
