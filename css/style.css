@@ -28,7 +28,7 @@ html {
 }
 
 body{
-    background: #393939;
+    background: #161614;
     color: rgb(255, 255, 255);
     overflow: auto;
 }
@@ -421,7 +421,7 @@ nav ul li a{
 
 .borders2{
     width: 100%;
-    position: relative;
+    margin-bottom: 90px;
 }
 
 /*Body-Center*/
