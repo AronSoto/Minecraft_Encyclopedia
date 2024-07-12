@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: Minecraftia;
-    src: url(/font/Minecrafter.Reg.ttf);
+    src: url(/font/Minecraftia.ttf);
   }
 /* Base */
 
@@ -122,6 +122,7 @@ label h5{
     font-size: 12px;
     margin: 5px;
     color: #575757;
+    font-family: Minecraftia;
 }
 
 nav ul{
@@ -308,21 +309,34 @@ nav ul li a{
     z-index: 2;
 }
 
-.btn-main {
-    width: 50%;
+.btnmain {
+    width: 60%;
     display: inline-block;
     padding: 10px 20px;
-    color: #fff;
-    background-color: #007bff;
+    font-size: 16px;
+    font-family: 'Minecraftia', sans-serif;
+    color: white;
+    background-color: #2f8f2f;
+    border: 0px solid #252426;
+    text-shadow: black 0.1em 0.1em 0.1em;
+    
+    cursor: pointer;
     text-align: center;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    outline: none;
+    box-shadow: 0 6px #336c1d;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-.btn-main:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
+.btnmain:hover {
+    background-color: #cca444;
+    box-shadow: 0 6px #945f3c;
+}
+
+.btnmain:active {
+    background-color: #1398a9;
+    box-shadow: 0 6px #056ca4;
+    transform: translateY(4px);
 }
 
 .text,
