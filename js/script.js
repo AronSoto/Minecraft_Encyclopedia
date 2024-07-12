@@ -16,3 +16,4 @@ document.addEventListener('DOMContentLoaded', function() {
         setInterval(showNextImage, 9000);
     }, 1000);
 });
+

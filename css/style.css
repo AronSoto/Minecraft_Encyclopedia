@@ -274,6 +274,7 @@ nav ul li a{
     transition: background-image 1s ease-in-out;
 }
 
+
 .carousel {
     position: absolute;
     width: 100%;
@@ -923,3 +924,5 @@ details[open] summary ~ *{
 }
 
 /*Responsive*/
+
+
