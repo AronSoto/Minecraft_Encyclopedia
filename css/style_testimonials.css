@@ -137,10 +137,10 @@
 
 .testim .cont div .img img {
     display: block;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     margin: auto;
-    border-radius: 50%;
+    border-radius: 10%;
 }
 
 .testim .cont div h2 {
