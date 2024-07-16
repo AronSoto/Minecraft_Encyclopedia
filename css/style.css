@@ -690,50 +690,14 @@ details[open] summary ~ *{
 /*Asked*/
 
 
-/*App*/
-
-#app{
-    text-align: center;
-}
-
-.app-store{
-    background: #fa0303;
-    margin: 0 10px;
-    padding: 4px 16px;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-    color: #fff;
-    cursor: pointer;
-}
-
-.app-store p{
-    margin-top: 8px;
-}
-
-.app-store span{
-    font-size: 16px;
-    line-height: 25px;
-}
-
-.app-store ion-icon{
-    font-size: 30px;
-    margin-right: 10px;
-}
-
-.download{
-    margin: 30px 0;
-}
-
-/*App*/
 
 /*Footer*/
 
 .footer{
+    position: relative;
     background-color: black;
     color: #b2b2b2;
-    padding: 30px 0;
+    padding: 50px 0;
 }
 
 .footer .container{
