@@ -32,6 +32,7 @@
   height: auto; 
   transform: translateX(-50%);
   object-fit: cover;
+  z-index: 0;
 }
 
 /*Imagen-testim*/

@@ -1,0 +1,130 @@
+:root {
+    --principal: #489729;
+    --shadow: #336c1d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.fade {
+    width: 100%;
+}
+
+.padre_relative {
+    background-color: var(--principal);
+    width: 100%;
+    max-width: 1892px;
+    height: 70px; 
+    position: relative;
+    box-shadow: 0 10px var(--shadow);
+    z-index: 4;
+
+}
+
+.hijo_absolute1 {
+    background-color: var(--principal);
+    width: 80%;
+    height: 210px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0 10px var(--shadow);
+}
+
+.hijo_absolute2 {
+    background-color: var(--principal);
+    width: 15%;
+    height: 70px;
+    position: absolute;
+    top: 70px;
+    left: 80%;
+    box-shadow: 0 10px var(--shadow);
+}
+
+.hijo_absolute3 {
+    background-color: var(--principal);
+    width: 5%;
+    height: 70px;
+    position: absolute;
+    top: 140px;
+    left: 95%;
+    box-shadow: 0 10px var(--shadow);
+}
+
+.hijo_absolute4 {
+    background-color: var(--principal);
+    width: 5%;
+    height: 70px;
+    position: absolute;
+    top: 140px;
+    left: 85%;
+    box-shadow: 0 10px var(--shadow);
+}
+
+.hijo_absolute5 {
+    background-color: var(--principal);
+    width: 5%;
+    height: 70px;
+    position: absolute;
+    top: 210px;
+    left: 90%;
+    box-shadow: 0 10px var(--shadow);
+}
+
+
+@media (max-width: 1200px) {
+    .fade {
+        transform: scale(0.75);
+        transform-origin: top left;
+        width: 133.33%;
+        height: 133.33%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .fade {
+        transform: scale(0.65);
+        transform-origin: top left;
+        width: 153.85%;
+        height: 153.85%;
+    }
+}
+
+@media (max-width: 900px) {
+    .fade{
+        transform: scale(0.6);
+        transform-origin: top left;
+        width: 166.67%;
+        height: 166.67%;
+    }
+}
+
+@media (max-width: 768px) {
+    .fade {
+        transform: scale(0.5);
+        transform-origin: top left;
+        width: 200%;
+        height: 200%;
+    }
+}
+
+@media (max-width: 480px) {
+    .fade {
+        transform: scale(0.4);
+        transform-origin: top left;
+        width: 250%;
+        height: 250%;
+    }
+}
+
+@media (max-width: 320px) {
+    .fade {
+        transform: scale(0.3);
+        transform-origin: top left;
+        width: 333.33%;
+        height: 333.33%;
+    }
+}

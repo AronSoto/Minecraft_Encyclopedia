@@ -1,7 +1,8 @@
 .profi {
   background-image: url('../img/profile/background_profile.png');
-  position: absolute;
+  position: relative;
   background-size: 100%;
+  z-index:0;
 }
 
 .profile-container {
@@ -11,7 +12,8 @@
   justify-content: center;
   margin: 0;
   position: relative;
-  top: 200px;
+  top: 100px;
+  z-index: 3;
 }
 
 .profile-card {
@@ -29,6 +31,7 @@
   transform: scale(0.576);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 480px;
+  z-index: 3;
 }
 
 .profile-image-wrapper:after {
@@ -37,6 +40,7 @@
   position: absolute;
   top: 468px;
   width: 100%;
+  z-index: 3;
 }
 
 .profile-image-wrapper:hover {
@@ -98,6 +102,7 @@
   font-weight: 600;
   margin-top: 19.2px;
   text-align: center;
+  z-index: 3;
 }
 
 .profile-name img{
@@ -118,5 +123,5 @@
 
 #profile_text {
   text-align: justify;
-  top: 300px;
+  top: 200px;
 }
