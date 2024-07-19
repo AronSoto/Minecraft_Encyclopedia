@@ -547,46 +547,30 @@ nav ul li a{
 /*Buttons-Profile*/
 
 
-.video-container {
+/*Imagen-testim*/
+.imagen-container {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: 0;
+    overflow: hidden;
 }
 
-.back-video {
+.imagen-container img {
     position: absolute;
-    top: 50%;
+    top: 0;
     left: 50%;
     width: 100%;
-    height: 130%;
+    height: auto; 
+    transform: translateX(-50%);
     object-fit: cover;
-    transform: translate(-50%, -50%);
-    opacity: 0.7;
 }
 
+/*Imagen-testim*/
 
 /*Body-Countiner*/
-
-.category{
-    list-style: none;
-    text-align: center;
-    margin: 20px 0px 40px 0px;
-}
-
-.category li{
-    display: inline-block;
-    margin: 0 15px;
-    font-size: 20px;
-    font-weight: 500;
-    cursor: pointer;
-}
-
-.category li.active{
-    color: orange;
-}
 
 .restaurant-menu{
     display: grid;
