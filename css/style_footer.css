@@ -33,9 +33,10 @@
   font-family: Minecraftia;
 }
 
-.footer p {
+.footer-about p {
   font-family: Minecraftia;
   font-size: 12px;
+  text-align: justify;
 }
 
 .footer ul {
@@ -138,6 +139,34 @@
   margin-top: 25px;
 }
 
-.copyright span{
+.copyright p {
+  margin: 0;
   font-family: Minecraftia;
+  font-size: 12px;
 }
+
+.copyright span {
+  font-family: Minecraftia;
+  width: 6%;
+  display: inline-block;
+  padding: 2px;
+  font-size: 12px;
+  z-index: 2;
+  color: white;
+  background-color: #ac1a39;
+  border: 0px solid #252426;
+  text-shadow: black 0.1em 0.1em 0.1em;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  box-shadow: 0 6px #56000d;
+  transition: background-color 0.3s, box-shadow 0.3s; 
+}
+
+.copyright span:hover {
+  background-color: #622d49;
+  box-shadow: 0 6px #47122e;
+}
+
+/* Copyright */
