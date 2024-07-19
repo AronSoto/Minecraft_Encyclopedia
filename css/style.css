@@ -547,29 +547,6 @@ nav ul li a{
 /*Buttons-Profile*/
 
 
-/*Imagen-testim*/
-.imagen-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    overflow: hidden;
-}
-
-.imagen-container img {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 100%;
-    height: auto; 
-    transform: translateX(-50%);
-    object-fit: cover;
-}
-
-/*Imagen-testim*/
-
 /*Body-Countiner*/
 
 .restaurant-menu{
@@ -672,50 +649,6 @@ details[open] summary ~ *{
 }
 
 /*Asked*/
-
-
-
-/*Footer*/
-
-.footer{
-    position: relative;
-    background-color: black;
-    color: #b2b2b2;
-    padding: 50px 0;
-}
-
-.footer .container{
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.footer h2{
-    font-size: 22px;
-    margin-bottom: 10px;
-    color:#fff;
-}
-
-.footer ul{
-    list-style: none;
-    line-height: 30px;
-    font-size: 16px;
-}
-
-.footer ul li{
-    cursor: pointer;
-}
-
-.footer-about{
-    width: 35%;
-}
-
-.copyright{
-    text-align: center;
-    margin-top: 25px;
-    border-top: 1px solid #b2b2b2;
-}
-
-/*Footer*/
 
 
 /*Responsive*/

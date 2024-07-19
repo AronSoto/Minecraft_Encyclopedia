@@ -1,15 +1,40 @@
 
 
+/*Imagen-testim*/
+.imagen-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.imagen-container img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: auto; 
+    transform: translateX(-50%);
+    object-fit: cover;
+}
+
+/*Imagen-testim*/
+
 .testim {
     width: 100%;
-    position:relative;
+    height: 1200px;
+    position: relative;
     background: rgb(51, 15, 15);
 }
+
 
 .testim .wrap {
     position: relative;
     width: 150%;
-    max-width: 1200px;
+    max-width: 800px;
     padding: 150px 20px;
     margin: auto;
 }
@@ -24,7 +49,7 @@
     transform: translateY(-50%);
     transition: all .3s ease-in-out;
     padding: 5px;
-    z-index: 22222222;
+    z-index: 1;
 }
 
 .testim .arrow:hover {
@@ -46,7 +71,7 @@
     bottom: 110px;
     left: 0;
     display: block;
-    z-index: 3333;
+    z-index: 1;
     height: 20px;
 }
 
