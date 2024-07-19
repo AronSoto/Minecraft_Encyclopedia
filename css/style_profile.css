@@ -1,3 +1,9 @@
+
+@font-face {
+  font-family: Minecraftia;
+  src: url(/font/Minecraftia.ttf);
+}
+
 .profi {
   background-image: url('../img/profile/background_profile.png');
   position: relative;
@@ -124,4 +130,11 @@
 #profile_text {
   text-align: justify;
   top: 200px;
+}
+
+.sentenceprofi{
+  font-family: Minecraftia;
+  color: #FFAA00;
+  text-shadow: 3px 3px #2A2A00;
+  font-size: 13px;
 }
