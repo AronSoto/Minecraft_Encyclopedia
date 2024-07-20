@@ -4,11 +4,34 @@
   src: url(/font/Minecraftia.ttf);
 }
 
+/*Imagen-testim*/
+
+.imagen-container {
+  background-image: url('../img/profile/fondo_nether.png');
+  background-size: 100%;
+}
+
+/*Imagen-testim*/
+
 .profi {
-  background-image: url('../img/profile/background_profile.png');
   position: relative;
   background-size: 100%;
-  z-index:0;
+  z-index: 0;
+}
+
+.section-profi {
+  width: 100%;
+  padding: 120px 0;
+}
+
+.flex-profi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-profi {
+  padding: 0 30px;
 }
 
 .profile-container {
@@ -54,8 +77,7 @@
 }
 
 .profile-image-inner {
-  clip-path: path("M 468,480 C 468,605.9209 365.9209,708 240,708 114.0791,708 12,605.9209 12,480 V 180 H 240 468 Z"
-    );
+  clip-path: path("M 468,480 C 468,605.9209 365.9209,708 240,708 114.0791,708 12,605.9209 12,480 V 180 H 240 468 Z");
   position: relative;
   transform-origin: 50%;
   top: -240px;
@@ -111,7 +133,7 @@
   z-index: 3;
 }
 
-.profile-name img{
+.profile-name img {
   width: 75%;
 }
 
@@ -132,7 +154,7 @@
   top: 200px;
 }
 
-.sentenceprofi{
+.sentenceprofi {
   font-family: Minecraftia;
   color: #FFAA00;
   text-shadow: 3px 3px #2A2A00;
