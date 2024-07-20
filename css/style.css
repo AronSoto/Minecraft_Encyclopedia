@@ -79,8 +79,6 @@ body{
     margin-bottom: 20px;
 }
 
-flex
-
 .btn{
     padding: 14px 20px;
     background: var(--color-principal);
@@ -271,7 +269,7 @@ nav ul li a{
     position: relative;
     overflow: hidden;
     height: 130vh;
-    background-image: url('../img/background_principal/back_1.jpg');
+    background-image: url('../img/header/back_1.jpg');
     background-size: cover;
     background-position: center;
     transition: background-image 1s ease-in-out;
@@ -303,10 +301,10 @@ nav ul li a{
     opacity: 1;
 }
 
-.carousel .image1 { background-image: url('../img/background_principal/back_1.jpg'); }
-.carousel .image2 { background-image: url('../img/background_principal/back_2.jpeg'); }
-.carousel .image3 { background-image: url('../img/background_principal/back_3.png'); }
-.carousel .image4 { background-image: url('../img/background_principal/back_4.jpg'); }
+.carousel .image1 { background-image: url('../img/header/back_1.jpg'); }
+.carousel .image2 { background-image: url('../img/header/back_2.jpeg'); }
+.carousel .image3 { background-image: url('../img/header/back_3.png'); }
+.carousel .image4 { background-image: url('../img/header/back_4.jpg'); }
 
 .text {
     position: relative;
