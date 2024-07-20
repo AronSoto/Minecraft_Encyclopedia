@@ -7,8 +7,9 @@
 /*Imagen-testim*/
 
 .imagen-container {
-  background-image: url('../img/profile/fondo_nether.png');
+  background-image: url('../img/profile/fondo_nether1.png');
   background-size: 100%;
+  height: 230vh;
 }
 
 /*Imagen-testim*/
@@ -32,6 +33,8 @@
 
 .container-profi {
   padding: 0 30px;
+  flex-wrap: wrap;
+  display: flex;
 }
 
 .profile-container {
