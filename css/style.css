@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: Minecraftia;
-    src: url(../font/Minecraftia.ttf);
+    src: url(../font/Minecraftia.ttf) format('truetype');
   }
 /* Base */
 
