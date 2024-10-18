@@ -98,8 +98,6 @@ errors or abrupt changes 🚫.
 <br>
 <p align="center">This page is designed to showcase the different web development skills I have 💻, as well as to dynamically present the diversity of the Minecraft game 🍏 through an encyclopedia of animals 📚. By sharing this page, you become “My Gandalf to my Frodo, guiding me through the lands of Mordor” 🧙‍♂️🧝‍♂️. Share and explore 🔄 my page to discover more ✨. </p>
 
-<br><br>
-
 <div><hr></div>
 
 > [!NOTE]
