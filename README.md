@@ -1,12 +1,12 @@
 # ⛏🧱 Minecraft Encyclopedia
-<img align="left" src="https://github.com/AronSoto/Minecraft_Encyclopedia/blob/main/resources/logo.png" alt="Unfortunately I didn't find the author of the pic, feel to open a pull request if found" width="130"/>
+<img align="left" src="https://github.com/AronSoto/Minecraft_Encyclopedia/blob/main/src/assets/resources/logo.png" alt="Unfortunately I didn't find the author of the pic, feel to open a pull request if found" width="130"/>
 
 I decided not to use frameworks in this project in order to demonstrate my ability over HTML, CSS and native JavaScript. By avoiding frameworks, I have had full control over every aspect of development, which has allowed me to custom optimize the code and minimize the use of unnecessary code or external dependencies. This has also forced me to tackle and solve problems directly, honing my fundamental skills and gaining a deeper understanding of how each element works in the browser. No responsive yet!!
 
 <br>
 
 ## 💡 Features
-<img src="https://github.com/AronSoto/Minecraft_Encyclopedia/blob/main/resources/First_Gif.gif" align = "right" width="500">
+<img src="https://github.com/AronSoto/Minecraft_Encyclopedia/blob/main/src/assets/resources/First_Gif.gif" align = "right" width="500">
 
 - 🖱️ Interactive UI Components
 - 🎨 Custom Animations and Transitions
@@ -38,7 +38,7 @@ Explore our extensive database with detailed descriptions of all the creatures i
 <br>
 <p align="center">
 <a href="https://plane.so">
-  <img src="https://github.com/AronSoto/Minecraft_Encyclopedia/blob/main/resources/Second_gif.gif" align = "center" width="800">
+  <img src="https://github.com/AronSoto/Minecraft_Encyclopedia/blob/main/src/assets/resources/Second_gif.gif" align = "center" width="800">
 </a>
 </p>
 
@@ -48,7 +48,7 @@ Explore our extensive database with detailed descriptions of all the creatures i
 ## 🔥 Interactive panels
   
 <br/>
-  <img align="left" src="https://github.com/AronSoto/Minecraft_Encyclopedia/blob/main/resources/Fourth_gif.gif" alt="" width="420"/>
+  <img align="left" src="https://github.com/AronSoto/Minecraft_Encyclopedia/blob/main/src/assets/resources/Fourth_gif.gif" alt="" width="420"/>
 
 
 ```
@@ -81,7 +81,7 @@ errors or abrupt changes 🚫.
 
 <p align="center">
 <a href="https://plane.so">
-  <img src="https://github.com/AronSoto/Minecraft_Encyclopedia/blob/main/resources/fifth_gif.gif" align = "center" width="800">
+  <img src="https://github.com/AronSoto/Minecraft_Encyclopedia/blob/main/src/assets/resources/fifth_gif.gif" align = "center" width="800">
 </a>
 </p>
 
@@ -91,7 +91,7 @@ errors or abrupt changes 🚫.
 
 <p align="center">
 <a href="https://plane.so">
-  <img src="https://github.com/AronSoto/Minecraft_Encyclopedia/blob/main/resources/sixth_gif.gif" align = "center" width="800">
+  <img src="https://github.com/AronSoto/Minecraft_Encyclopedia/blob/main/src/assets/resources/sixth_gif.gif" align = "center" width="800">
 </a>
 </p>
 
