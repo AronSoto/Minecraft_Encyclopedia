@@ -1,0 +1,714 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap");
+
+@font-face {
+  font-family: Minecraftia;
+  src: url(../font/Minecraftia.ttf) format("truetype");
+}
+/* Base */
+
+:root {
+  --color-principal: rgb(96, 138, 74);
+  --color-principal-dark-shadow: rgb(55, 82, 42);
+  --color-border-color: hsla(0, 0%, 100%, 0.077);
+  --color-hover: rgba(255, 255, 255, 0.102);
+  --copy-click: rgba(255, 255, 255, 0.2);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #161614;
+  color: rgb(255, 255, 255);
+  overflow: auto;
+}
+
+#reftop {
+  padding-top: 0.1px;
+}
+
+.section {
+  width: 100%;
+  padding: 120px 0;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  padding: 0 30px;
+}
+
+.primary {
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.secondary {
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.secondary img {
+  width: 70%;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.tertiary {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 14px 20px;
+  background: var(--color-principal);
+  text-decoration: none;
+  border-radius: 3px;
+  border: 2px solid var(--border-color);
+  box-shadow: 0px 5px 0px var(--main-color-dark);
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  display: inline-block;
+  margin: 20px 0;
+  transition: all 0.1s;
+  font-size: 1.2rem;
+}
+
+.text a:hover {
+  box-shadow: 0px 0.5px 0px (var(--color-principal-dark-shadow));
+  transform: translateY(10px);
+}
+
+/*Header*/
+
+nav {
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: #000000;
+  box-shadow: 0 1px 1px -1px rgba(0, 0, 0, 0.22);
+  z-index: 22;
+}
+
+label.logo {
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 30px;
+  font-weight: 700;
+  color: white;
+}
+
+label h5 {
+  display: inline-block;
+  font-size: 12px;
+  margin: 5px;
+  color: #575757;
+  font-family: Minecraftia;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  font-size: 18px;
+  padding: 7px 13px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  background: var(--color-principal);
+  border: 2px solid var(--color-border-color);
+  box-shadow: 0px 5px 0px var(--color-principal-dark-shadow);
+  border-radius: 1px;
+  padding: 0.5rem 3rem;
+  transition: all 0.5s;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
+}
+
+.menu a:hover {
+  padding: 0.7rem 3.2rem; /* Increase padding */
+  box-shadow: 0px 0.5px 0px (var(--color-principal-dark-shadow));
+  transform: translateY(5px);
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  line-height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+  background-color: var(--color-principal);
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  padding-left: 8px;
+  display: none;
+}
+
+.checkbtn ion-icon {
+  transition: transform 0.4s ease;
+}
+
+#check:checked + .checkbtn ion-icon {
+  transform: rotateX(180deg);
+}
+
+/*Header*/
+
+/*Principal Minecraft*/
+
+#stage {
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.spinner {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: spincube 8s linear infinite;
+}
+
+.face {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: black;
+  border: 1px solid transparent; /* No visible border */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; /* Para compatibilidad con WebKit */
+  -moz-backface-visibility: hidden; /* Para compatibilidad con Mozilla */
+}
+
+.face img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.face1 {
+  transform: rotateY(0deg) translateZ(150px);
+}
+.face2 {
+  transform: rotateY(90deg) translateZ(150px);
+}
+.face3 {
+  transform: rotateY(180deg) translateZ(150px);
+}
+.face4 {
+  transform: rotateY(-90deg) translateZ(150px);
+}
+.face5 {
+  transform: rotateX(90deg) translateZ(150px);
+}
+.face6 {
+  transform: rotateX(-90deg) translateZ(150px);
+}
+
+@keyframes spincube {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+/*Principal Minecraft*/
+
+/*Body-High*/
+
+#hero-section {
+  position: relative;
+  overflow: hidden;
+  height: 130vh;
+  background-image: url("../images/header/back_1.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+  z-index: 1;
+}
+
+.carousel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.carousel .image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  z-index: -1;
+}
+
+.carousel .image.active {
+  opacity: 1;
+}
+
+.carousel .image1 {
+  background-image: url("../images/header/back_1.jpg");
+}
+.carousel .image2 {
+  background-image: url("../images/header/back_2.jpeg");
+}
+.carousel .image3 {
+  background-image: url("../images/header/back_3.png");
+}
+.carousel .image4 {
+  background-image: url("../images/header/back_4.jpg");
+}
+
+.text {
+  position: relative;
+  z-index: 2;
+}
+
+.btnmain {
+  width: 60%;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  z-index: 2;
+  font-family: "Minecraftia", sans-serif;
+  color: white;
+  background-color: #2f8f2f;
+  border: 0px solid #252426;
+  text-shadow: black 0.1em 0.1em 0.1em;
+
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  box-shadow: 0 6px #336c1d;
+  transition:
+    background-color 0.3s,
+    box-shadow 0.3s;
+}
+
+.btnmain:hover {
+  background-color: #cca444;
+  box-shadow: 0 6px #945f3c;
+}
+
+.btnmain:active {
+  background-color: #1398a9;
+  box-shadow: 0 6px #056ca4;
+  transform: translateY(4px);
+}
+
+.text,
+.visual {
+  width: 50%;
+  padding-bottom: 8rem;
+}
+
+.text {
+  margin: 0 20px;
+}
+
+.visual img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#hero-section .text {
+  margin-left: 30px;
+}
+
+/*Body-High*/
+
+/*Body-Center*/
+
+#refmiddle {
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.box {
+  padding: 25px 5px;
+  margin: 0 10px;
+  border-radius: 8px;
+  font-size: 18px;
+  transition: all 0.5s ease; /* Ajuste de la transición */
+  cursor: pointer;
+  background: black;
+  border: 0px solid rgb(0, 0, 0);
+  box-shadow: 5px 15px 0px #c28340;
+}
+
+.box:hover {
+  transform: scale(1.1); /* Agranda el elemento ligeramente */
+  margin: 0 25px; /* Aumenta el margen para alejar los elementos adyacentes */
+  box-shadow: 0px 0px 0px #854f2b; /* Ajusta la sombra */
+}
+
+.box img {
+  width: 35px;
+  color: #91bd59;
+  margin: 15px 0;
+}
+
+.box:hover {
+  color: #fff;
+  border-color: #ffffff;
+  background: #61371f;
+}
+
+.box.active ion-icon,
+.box:hover ion-icon {
+  color: #fff;
+}
+
+.aboutof {
+  background-color: #d4bc98; /* Color de la madera de roble */
+  z-index: -2;
+}
+
+.borders1 {
+  width: 100%;
+  position: absolute;
+  bottom: -1px;
+  z-index: 1;
+}
+
+.borders2 {
+  width: 100%;
+  margin-bottom: 90px;
+}
+
+/*Body-Center*/
+
+/*Body-Middle*/
+
+#about .visual img,
+#app .visual img {
+  margin-right: auto;
+}
+
+/*Body-Middles*/
+
+/*Body-Countiner*/
+
+.restaurant-menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.menu-item {
+  width: 260px;
+  margin: 0 auto;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.menu-item img {
+  width: 100%;
+}
+
+.order {
+  justify-content: space-between;
+}
+
+.btn-menu {
+  padding: 6px 10px;
+  font-size: 16px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid orange;
+  color: orange;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 8px 0;
+}
+
+.location {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/*Body-Countiner*/
+
+/*Kinds*/
+
+#testimonial .visual img {
+  margin-left: auto;
+}
+
+.user {
+  margin-top: 30px;
+  justify-content: start;
+}
+
+.user img {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+/*Kinds*/
+
+/*Asked*/
+
+#faq .secondary {
+  text-align: center;
+}
+
+.faq {
+  width: 60%;
+  margin: 50px auto 20px auto;
+}
+
+summary {
+  padding: 1rem;
+  border: 1px solid #b2b2b2;
+  background-color: var(--color-principal);
+  margin-bottom: 1rem;
+  cursor: pointer;
+  outline: none;
+  border-radius: 0.3em;
+  font-weight: 600;
+}
+
+details[open] summary ~ * {
+  animation: open 0.5s ease-in-out;
+}
+
+@keyframes open {
+  from {
+    opacity: 1;
+    margin-top: -10px;
+  }
+
+  top {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
+/*Asked*/
+
+/*Responsive*/
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 20px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 80px;
+    left: -100%;
+    transition: all 0.5s;
+    text-align: center;
+    background: #2e2e2e;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a:hover,
+  a.active {
+    box-shadow: 0px 0.5px 0px (var(--color-principal-dark-shadow));
+    transform: none;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  #hero-section {
+    margin-top: 80px;
+  }
+
+  #hero.section .text {
+    margin-left: auto;
+  }
+
+  #stage {
+    margin: 40px auto;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .visual,
+  .text {
+    width: 93%;
+    margin: 15px auto;
+    text-align: center;
+  }
+
+  .download,
+  .user {
+    flex-direction: row;
+  }
+
+  .user {
+    justify-content: center;
+  }
+
+  .visual img {
+    margin: 0 auto;
+  }
+
+  .box {
+    margin: 15px 0;
+  }
+
+  .restaurant-menu {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+
+  .faq,
+  .menu-item {
+    width: 80%;
+  }
+
+  .primary {
+    font-size: 56px;
+  }
+
+  .secondary {
+    font-size: 40px;
+  }
+
+  .tertiary {
+    font-size: 20px;
+  }
+
+  .footer-about {
+    width: 100%;
+    text-align: center;
+  }
+
+  .quick-links,
+  .get-in-touch,
+  .footer-category {
+    display: none;
+  }
+}
+
+@media (max-width: 680px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .text,
+  .visual {
+    width: 90%;
+  }
+
+  .restaurant-menu {
+    grid-template-columns: 1fr;
+  }
+
+  .faq {
+    width: 90%;
+  }
+
+  .app-store {
+    margin: 10px 0;
+  }
+
+  .download {
+    flex-direction: column;
+  }
+
+  .primary {
+    font-size: 48px;
+  }
+
+  .secondary {
+    font-size: 32px;
+  }
+
+  .tertiary {
+    font-size: 17px;
+  }
+}
+
+/*Responsive*/
