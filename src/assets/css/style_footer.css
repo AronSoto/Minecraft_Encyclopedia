@@ -1,17 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 :root {
   --color-icon: #b2b2b2;
   --social-icon1: rgb(31, 30, 30);
   --social-icon2: #218715;
-  --social-icon3: #0077B5;
+  --social-icon3: #0077b5;
 }
 
 @font-face {
   font-family: Minecraftia;
-  src: url(../fonts/Minecraftia.ttf) format('truetype');
+  src: url(../fonts/Minecraftia.ttf) format("truetype");
 }
-
 
 /*Footer*/
 
@@ -107,7 +106,7 @@
 }
 
 .icon-link::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -119,7 +118,7 @@
   border-radius: 50%;
   z-index: -1;
   transform: scale(0);
-  transition: 0.3s cubic-bezier(.95, .32, .37, 1.21);
+  transition: 0.3s cubic-bezier(0.95, 0.32, 0.37, 1.21);
 }
 
 .icon-link:hover::before {
@@ -167,7 +166,9 @@
   text-decoration: none;
   outline: none;
   box-shadow: 0 6px #56000d;
-  transition: background-color 0.3s, box-shadow 0.3s;
+  transition:
+    background-color 0.3s,
+    box-shadow 0.3s;
 }
 
 .copyright span:hover {

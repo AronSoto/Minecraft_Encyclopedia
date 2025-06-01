@@ -1,123 +1,123 @@
 :root {
-    --principal: #489729;
-    --shadow: #336c1d;
+  --principal: #489729;
+  --shadow: #336c1d;
 }
 
 .fade {
-    width: 100%;
+  width: 100%;
 }
 
 .padre_relative {
-    background-color: var(--principal);
-    width: 100%;
-    max-width: 1892px;
-    height: 50px;
-    position: relative;
-    box-shadow: 0 10px var(--shadow);
-    z-index: 4;
+  background-color: var(--principal);
+  width: 100%;
+  max-width: 1892px;
+  height: 50px;
+  position: relative;
+  box-shadow: 0 10px var(--shadow);
+  z-index: 4;
 }
 
 .hijo_absolute1 {
-    background-color: var(--principal);
-    width: 84%;
-    height: 150px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    box-shadow: 0 10px var(--shadow);
+  background-color: var(--principal);
+  width: 84%;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 10px var(--shadow);
 }
 
 .hijo_absolute2 {
-    background-color: var(--principal);
-    width: 12%;
-    height: 50px;
-    position: absolute;
-    top: 50px;
-    left: 84%;
-    box-shadow: 0 10px var(--shadow);
+  background-color: var(--principal);
+  width: 12%;
+  height: 50px;
+  position: absolute;
+  top: 50px;
+  left: 84%;
+  box-shadow: 0 10px var(--shadow);
 }
 
 .hijo_absolute3 {
-    background-color: var(--principal);
-    width: 4%;
-    height: 60px;
-    position: absolute;
-    top: 100px;
-    left: 95.98%;
-    box-shadow: 0 10px var(--shadow);
+  background-color: var(--principal);
+  width: 4%;
+  height: 60px;
+  position: absolute;
+  top: 100px;
+  left: 95.98%;
+  box-shadow: 0 10px var(--shadow);
 }
 
 .hijo_absolute4 {
-    background-color: var(--principal);
-    width: 4%;
-    height: 60px;
-    position: absolute;
-    top: 100px;
-    left: 88%;
-    box-shadow: 0 10px var(--shadow);
+  background-color: var(--principal);
+  width: 4%;
+  height: 60px;
+  position: absolute;
+  top: 100px;
+  left: 88%;
+  box-shadow: 0 10px var(--shadow);
 }
 
 .hijo_absolute5 {
-    background-color: var(--principal);
-    width: 4%;
-    height: 60px;
-    position: absolute;
-    top: 160px;
-    left: 92%;
-    box-shadow: 0 10px var(--shadow);
+  background-color: var(--principal);
+  width: 4%;
+  height: 60px;
+  position: absolute;
+  top: 160px;
+  left: 92%;
+  box-shadow: 0 10px var(--shadow);
 }
 
 /* Media queries para ajustar en pantallas más pequeñas */
 @media (max-width: 1200px) {
-    .fade {
-        transform: scale(0.75);
-        transform-origin: top left;
-        width: 133.33%;
-        height: 280px;
-    }
+  .fade {
+    transform: scale(0.75);
+    transform-origin: top left;
+    width: 133.33%;
+    height: 280px;
+  }
 }
 
 @media (max-width: 1000px) {
-    .fade {
-        transform: scale(0.65);
-        transform-origin: top left;
-        width: 153.85%;
-        height: 323px;
-    }
+  .fade {
+    transform: scale(0.65);
+    transform-origin: top left;
+    width: 153.85%;
+    height: 323px;
+  }
 }
 
 @media (max-width: 900px) {
-    .fade {
-        transform: scale(0.6);
-        transform-origin: top left;
-        width: 166.67%;
-        height: 350px;
-    }
+  .fade {
+    transform: scale(0.6);
+    transform-origin: top left;
+    width: 166.67%;
+    height: 350px;
+  }
 }
 
 @media (max-width: 768px) {
-    .fade {
-        transform: scale(0.5);
-        transform-origin: top left;
-        width: 200%;
-        height: 420px;
-    }
+  .fade {
+    transform: scale(0.5);
+    transform-origin: top left;
+    width: 200%;
+    height: 420px;
+  }
 }
 
 @media (max-width: 480px) {
-    .fade {
-        transform: scale(0.4);
-        transform-origin: top left;
-        width: 250%;
-        height: 525px;
-    }
+  .fade {
+    transform: scale(0.4);
+    transform-origin: top left;
+    width: 250%;
+    height: 525px;
+  }
 }
 
 @media (max-width: 320px) {
-    .fade {
-        transform: scale(0.3);
-        transform-origin: top left;
-        width: 333.33%;
-        height: 700px;
-    }
+  .fade {
+    transform: scale(0.3);
+    transform-origin: top left;
+    width: 333.33%;
+    height: 700px;
+  }
 }
