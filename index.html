@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="icon" href="/Minecraft_Encyclopedia/assets/icon_creeper-D5ubAHLz.png" />
+
+    <link rel="stylesheet" href="assets/css/style_testimonials.css" />
+
+    <title>Minecyclopedia</title>
+    <script type="module" crossorigin src="/Minecraft_Encyclopedia/assets/index-CH2LCq-W.js"></script>
+    <link rel="stylesheet" crossorigin href="/Minecraft_Encyclopedia/assets/index-BToLSVTk.css">
+  </head>
+
+  <body>
+    <header id="reftop"></header>
+    <!--Header-->
+    <div class="menu">
+      <nav>
+        <input type="checkbox" id="check" style="display: none" />
+        <label for="check" class="checkbtn">
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <label class="logo">
+          Encyclopedia
+          <h5
+            class="animate__animated animate__jello animate__delay-1s animate__repeat-3"
+          >
+            by AronSoto
+          </h5>
+        </label>
+        <ul>
+          <li><a href="#reftop">Home</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!--Header-->
+
+    <!--Information-->
+
+    <div class="section flex" id="hero-section">
+      <div class="carousel">
+        <div class="image image1"></div>
+        <div class="image image2"></div>
+        <div class="image image3"></div>
+        <div class="image image4"></div>
+      </div>
+      <div class="text">
+        <h1 class="primary">Welcome to the Minecraft Encyclopedia<br /></h1>
+        <p class="tertiary">
+          Explore our extensive database with detailed descriptions of all the
+          creatures in the Minecraft universe. From peaceful sheep to fearsome
+          foxes, you'll find everything you need to know about Minecraft
+          animals. This dynamic and easy-to-use website offers engaging
+          animations and an interactive experience.
+        </p>
+        <a href="#refmiddle"
+          ><button class="btnmain">Explore Encyclopedia</button></a
+        >
+      </div>
+      <center class="visual">
+        <div id="stage">
+          <div class="spinner">
+            <div class="face face1">
+              <img src="/Minecraft_Encyclopedia/assets/cube-gBoT-PT9.jpg" width="300px" height="300px" />
+            </div>
+            <div class="face face2">
+              <img src="/Minecraft_Encyclopedia/assets/cube-gBoT-PT9.jpg" width="300px" height="300px" />
+            </div>
+            <div class="face face3">
+              <img src="/Minecraft_Encyclopedia/assets/cube-gBoT-PT9.jpg" width="300px" height="300px" />
+            </div>
+            <div class="face face4">
+              <img src="/Minecraft_Encyclopedia/assets/cube-gBoT-PT9.jpg" width="300px" height="300px" />
+            </div>
+            <div class="face face5">
+              <img src="/Minecraft_Encyclopedia/assets/cube-gBoT-PT9.jpg" width="300px" height="300px" />
+            </div>
+            <div class="face face6">
+              <img src="/Minecraft_Encyclopedia/assets/cube-gBoT-PT9.jpg" width="300px" height="300px" />
+            </div>
+          </div>
+        </div>
+      </center>
+      <img src="data:image/avif;base64,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" alt="" class="borders1" />
+    </div>
+
+    <!--Information-->
+
+    <!--Encyclopedia-->
+
+    <section class="aboutof">
+      <div class="section" id="refmiddle">
+        <h2 class="secondary">
+          <img src="/Minecraft_Encyclopedia/assets/minecraft_title-Dzv3oyE7.png" alt="" />
+        </h2>
+        <div class="container flex">
+          <div class="box">
+            <h3>Taming Techniques</h3>
+            <img src="/Minecraft_Encyclopedia/assets/bee_face-BUdp8Nsq.jpg" alt="" />
+            <p>
+              Learn to tame wolves, cats, and parrots in Minecraft. Discover
+              tips and tricks for making animals your loyal companions on your
+              adventures. Taming brings exciting new dynamics to the game.
+            </p>
+          </div>
+          <div class="box">
+            <h3>Rare Species Spotlight</h3>
+            <img src="/Minecraft_Encyclopedia/assets/fox_face-CWve6uh8.png" alt="" />
+            <p>
+              Find and understand rare Minecraft animals like Mooshrooms and
+              Axolotls. Discover their unique habitats and behaviors to add
+              these elusive creatures to your collection. Explore and uncover
+              their secrets.
+            </p>
+          </div>
+
+          <div class="box">
+            <h3>Breeding Basics</h3>
+            <img src="/Minecraft_Encyclopedia/assets/pig_face-uJ4Wg14x.jpg" alt="" />
+            <p>
+              Master breeding cows, chickens, and bees in Minecraft. Learn the
+              essentials for creating a thriving farm or zoo. Breeding basics
+              are key to expanding your animal population and resources.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Encyclopedia-->
+
+    <!--Animals-->
+
+    <section>
+      <img src="data:image/avif;base64,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" alt="" class="borders2" />
+      <section class="animals">
+        <div class="category_animals">
+          <div class="animal_content first_animal" id="fondo_animal">
+            <img
+              src="/Minecraft_Encyclopedia/assets/Secondary_fox-BklnecSU.jpg"
+              class="profession_image"
+              alt="Secondary"
+            />
+            <img
+              src="/Minecraft_Encyclopedia/assets/Principal_fox-DgaQidNq.jpg"
+              class="profile_image"
+              alt="Principal"
+            />
+            <div class="profile_detail">
+              <span>Fox</span>
+              <p>Wild Animal</p>
+            </div>
+            <div class="wrapper">
+              <div class="profile_quote">
+                <p>
+                  A Minecraft fox is a clever and resourceful creature, thriving
+                  in taiga biomes.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="animal_content second_animal" id="fondo_animal">
+            <img
+              src="/Minecraft_Encyclopedia/assets/Secondary_Sheep-D9DQ4SWw.jpg"
+              class="profession_image"
+              alt="Secondary"
+            />
+            <img
+              src="/Minecraft_Encyclopedia/assets/Principal_Sheep-Bz3n1PSd.jpg"
+              class="profile_image"
+              alt="Principal"
+            />
+            <div class="profile_detail">
+              <span>Sheep</span>
+              <p>Farm Animal</p>
+            </div>
+            <div class="wrapper">
+              <div class="profile_quote">
+                <p>
+                  A Minecraft sheep is a gentle and versatile creature, found
+                  grazing in various biomes.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="animal_content three_animal" id="fondo_animal">
+            <img
+              src="/Minecraft_Encyclopedia/assets/Secondary_Bee-BBkFNlEA.jpg"
+              class="profession_image"
+              alt="Secondary"
+            />
+            <img
+              src="/Minecraft_Encyclopedia/assets/Principal_Bee-D1hBNrrZ.jpg"
+              class="profile_image"
+              alt="Principal"
+            />
+            <div class="profile_detail">
+              <span>Bee</span>
+              <p>Wild Insect</p>
+            </div>
+            <div class="wrapper">
+              <div class="profile_quote">
+                <p>
+                  A Minecraft bee is a diligent and buzzing creature, commonly
+                  found near flower fields and beehives, playing a vital role in
+                  pollination.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="animals">
+      <div class="category_animals">
+        <div class="animal_content" id="fondo_animal">
+          <img
+            src="/Minecraft_Encyclopedia/assets/Secondary_Axolotl-DrlCYFJa.jpg"
+            class="profession_image"
+            alt="Secondary"
+          />
+          <img
+            src="/Minecraft_Encyclopedia/assets/Principal_Axolotl-WpA6PLjr.jpg"
+            class="profile_image"
+            alt="Principal"
+          />
+          <div class="profile_detail">
+            <span>Axolotl</span>
+            <p>Aquatic Animal</p>
+          </div>
+          <div class="wrapper">
+            <div class="profile_quote">
+              <p>
+                A Minecraft axolotl is a curious and resilient aquatic creature,
+                thriving in underwater caves and lakes.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="animal_content" id="fondo_animal">
+          <img
+            src="/Minecraft_Encyclopedia/assets/Secondary_Panda-D2V_8A8F.jpg"
+            class="profession_image"
+            alt="Secondary"
+          />
+          <img
+            src="/Minecraft_Encyclopedia/assets/Principal_Panda-DKbFm6dO.jpg"
+            class="profile_image"
+            alt="Principal"
+          />
+          <div class="profile_detail">
+            <span>Panda</span>
+            <p>Wild Animal</p>
+          </div>
+          <div class="wrapper">
+            <div class="profile_quote">
+              <p>
+                A Minecraft panda is a gentle and playful creature, commonly
+                found in bamboo jungles.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="animal_content" id="fondo_animal">
+          <img
+            src="/Minecraft_Encyclopedia/assets/Secondary_Sniffer-DuTsM6uY.jpg"
+            class="profession_image"
+            alt="Secondary"
+          />
+          <img
+            src="/Minecraft_Encyclopedia/assets/Principal_Sniffer-ByaozPE4.jpg"
+            class="profile_image"
+            alt="Principal"
+          />
+          <div class="profile_detail">
+            <span>Sniffer</span>
+            <p>Ancient Animal</p>
+          </div>
+          <div class="wrapper">
+            <div class="profile_quote">
+              <p>
+                A Minecraft Sniffer is an ancient and wise creature, known for
+                its ability to dig up rare seeds from the ground.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="animals">
+      <div class="category_animals">
+        <div class="animal_content" id="fondo_animal">
+          <img
+            src="/Minecraft_Encyclopedia/assets/Secondary_frog-BHJ_szMM.jpg"
+            class="profession_image"
+            alt="Secondary"
+          />
+          <img
+            src="/Minecraft_Encyclopedia/assets/Principal_frog-h6vxl7AX.jpg"
+            class="profile_image"
+            alt="Principal"
+          />
+          <div class="profile_detail">
+            <span>Frog</span>
+            <p>Neutral Animal</p>
+          </div>
+          <div class="wrapper">
+            <div class="profile_quote">
+              <p>
+                A Minecraft frog is a versatile and lively creature, thriving in
+                swamp biomes and near water sources.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="animal_content" id="fondo_animal">
+          <img
+            src="/Minecraft_Encyclopedia/assets/Secondary_Sheep-D9DQ4SWw.jpg"
+            class="profession_image"
+            alt="Secondary"
+          />
+          <img
+            src="/Minecraft_Encyclopedia/assets/Principal_Sheep-Bz3n1PSd.jpg"
+            class="profile_image"
+            alt="Principal"
+          />
+          <div class="profile_detail">
+            <span>Sheep</span>
+            <p>Farm Animal</p>
+          </div>
+          <div class="wrapper">
+            <div class="profile_quote">
+              <p>
+                A Minecraft sheep is a gentle and versatile creature, found
+                grazing in various biomes.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="animal_content" id="fondo_animal">
+          <img
+            src="/Minecraft_Encyclopedia/assets/Secondary_Bee-BBkFNlEA.jpg"
+            class="profession_image"
+            alt="Secondary"
+          />
+          <img
+            src="/Minecraft_Encyclopedia/assets/Principal_Bee-D1hBNrrZ.jpg"
+            class="profile_image"
+            alt="Principal"
+          />
+          <div class="profile_detail">
+            <span>Bee</span>
+            <p>Wild Insect</p>
+          </div>
+          <div class="wrapper">
+            <div class="profile_quote">
+              <p>
+                A Minecraft bee is a diligent and buzzing creature, commonly
+                found near flower fields and beehives, playing a vital role in
+                pollination.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Animals-->
+
+    <div class="fade">
+      <div class="padre_relative">
+        <div class="hijo_absolute1"></div>
+        <div class="hijo_absolute2"></div>
+        <div class="hijo_absolute3"></div>
+        <div class="hijo_absolute4"></div>
+        <div class="hijo_absolute5"></div>
+      </div>
+    </div>
+
+    <!--Profile-->
+
+    <section class="imagen-container">
+      <div class="profi">
+        <div class="section-profi">
+          <div class="container-profi flex-profi" id="about">
+            <div class="profile-container">
+              <div class="profile-card">
+                <div class="profile-image-wrapper">
+                  <div class="profile-image-inner">
+                    <img
+                      class="profile-circle"
+                      src="/Minecraft_Encyclopedia/assets/background_profile-v67d22gw.jpg"
+                    />
+                    <img
+                      class="profile-img profile-img1"
+                      src="/Minecraft_Encyclopedia/assets/profile-B4me_HLe.png"
+                    />
+                  </div>
+                </div>
+                <div class="profile-divider">
+                  <div class="section-colors" style="background: #893401"></div>
+                  <div class="section-colors" style="background: #c46002"></div>
+                  <div class="section-colors" style="background: #e39021"></div>
+                  <div class="section-colors" style="background: #eebd3b"></div>
+                  <div class="section-colors" style="background: #e39021"></div>
+                  <div class="section-colors" style="background: #c46002"></div>
+                  <div class="section-colors" style="background: #893401"></div>
+                </div>
+                <div class="profile-name">
+                  <img src="/Minecraft_Encyclopedia/assets/tittle_name-Gt0o-f_t.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="text" id="profile_text">
+              <div class="primary" id="profile_data">Project Minecraft</div>
+              <h2 class="secondary">Minecraft Encyclopedia</h2>
+              <h3 class="tertiary">Discover Our Minecraft Encyclopedia</h3>
+              <p>
+                I am a software engineer passionate about
+                <span class="sentenceprofi">Minecraft</span>. I created this
+                encyclopedia to help other players discover and explore all that
+                the game has to offer. With a few years in web development and a
+                deep fascination for Minecraft, my goal is to provide a reliable
+                and detailed source of information for the community. Also, to
+                show in a dynamic and didactic way a different style of
+                interface for the users.
+              </p>
+              <br /><br />
+            </div>
+          </div>
+        </div>
+
+        <!--Footer-->
+        <div class="mainfooter">
+          <div class="footer">
+            <div class="container-profi flex-profi">
+              <div class="footer-about">
+                <h2>About</h2>
+                <p>
+                  This page is designed to showcase the different web
+                  development skills I have, as well as to dynamically present
+                  the diversity of the Minecraft game through an encyclopedia of
+                  animals. By sharing this page, you become
+                  <span class="sentence"
+                    >“My Gandalf to my Frodo, guiding me through the lands of
+                    Mordor”</span
+                  >
+                  Share and explore my page to discover more.
+                </p>
+              </div>
+              <div class="iconosb">
+                <ul class="icon-list">
+                  <li class="icon-item">
+                    <a href="https://github.com/AronSoto" class="icon-link"
+                      ><i style="font-size: 50px" class="fa">&#xf09b;</i></a
+                    >
+                  </li>
+                  <li class="icon-item">
+                    <a
+                      href="mailto:aronchino2g@hotmail.com?Subject=Interesado%20en%20el%20perfil"
+                      class="icon-link"
+                      ><i style="font-size: 40px" class="fa">&#xf0e0;</i></a
+                    >
+                  </li>
+                  <li class="icon-item">
+                    <a
+                      href="https://www.linkedin.com/in/aron-soto/"
+                      class="icon-link"
+                      ><i style="font-size: 40px" class="fa">&#xf0e1;</i></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="copyright">
+              <br />
+              <p>
+                Copyright &copy; 2024 <span>AronSoto</span> All Rights Reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://use.fontawesome.com/1744f3f671.js"></script>
+    <script src="js/arrow.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
+    ></script>
+  </body>
+</html>
