@@ -1,4 +1,5 @@
 export default {
+  base: '/Minecraft_Encyclopedia/',
   root: 'src',
   build: {
     outDir: '../dist',
