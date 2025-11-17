@@ -6,12 +6,20 @@
     "start": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "vite build && git add dist -f && git commit -m 'Deploy' && git subtree push --prefix dist origin gh-pages"
+    "deploy": "vite build && git add dist -f && git commit -m 'Deploy' && git subtree push --prefix dist origin gh-pages",
+    "lint": "eslint . --ext .js,.html",
+    "lint:fix": "eslint . --ext .js,.html --fix",
+    "format": "prettier --write \"**/*.{html,css,js,json,md}\"",
+    "format:check": "prettier --check \"**/*.{html,css,js,json,md}\""
   },
   "dependencies": {
     "prettier": "^3.5.3"
   },
   "devDependencies": {
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-html": "^8.1.3",
+    "eslint-plugin-prettier": "^5.5.4",
     "vite": "^6.3.5"
   }
 }
